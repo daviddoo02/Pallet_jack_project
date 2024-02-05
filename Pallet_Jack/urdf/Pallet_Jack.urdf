@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Pallet_Jack">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="5.96411363513258E-18 -0.229341831873231 -0.368194226284258"
+        rpy="0 0 0" />
+      <mass
+        value="651.526919825643" />
+      <inertia
+        ixx="236.648863823001"
+        ixy="1.57745839872068E-15"
+        ixz="-1.34980703892526E-14"
+        iyy="111.969799835616"
+        iyz="-4.54986010712036"
+        izz="204.968097364789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Steering">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 -3.67394039744206E-17 0.5125"
+        rpy="0 0 0" />
+      <mass
+        value="44.1786466911065" />
+      <inertia
+        ixx="1.68661187628026"
+        ixy="-2.32073788577701E-34"
+        ixz="3.10766709049231E-16"
+        iyy="1.68661187628026"
+        iyz="7.49130242526057E-33"
+        izz="0.497009775274948" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Steering.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Steering.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Steering"
+    type="revolute">
+    <origin
+      xyz="0 0.2925 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Steering" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Wheel">
+    <inertial>
+      <origin
+        xyz="0 1.38777878078145E-17 -1.15037423374693E-17"
+        rpy="0 0 0" />
+      <mass
+        value="37.6991118430775" />
+      <inertia
+        ixx="0.659734457253857"
+        ixy="0"
+        ixz="1.10460319414032E-33"
+        iyy="0.659734457253857"
+        iyz="-2.18556993607747E-33"
+        izz="0.753982236861551" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel"
+    type="revolute">
+    <origin
+      xyz="0 0 0.695"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Steering" />
+    <child
+      link="Wheel" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Lidar">
+    <inertial>
+      <origin
+        xyz="-2.85610591378709E-18 9.26352311630718E-18 0.0132810164759984"
+        rpy="0 0 0" />
+      <mass
+        value="1.4060100831482" />
+      <inertia
+        ixx="0.00280942990751177"
+        ixy="-2.56753174169809E-35"
+        ixz="-1.92990064923066E-19"
+        iyy="0.00280942990751177"
+        iyz="2.3677402411872E-20"
+        izz="0.00294592083958115" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar"
+    type="fixed">
+    <origin
+      xyz="0 -0.8175 1.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Zed_Camera_1">
+    <inertial>
+      <origin
+        xyz="0.025 -2.75457869025788E-18 -2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.615000000000001" />
+      <inertia
+        ixx="0.00322957000000001"
+        ixy="4.86917445842834E-19"
+        ixz="4.01154803819637E-18"
+        iyy="0.000256250000000012"
+        iyz="-1.2057115591509E-18"
+        izz="0.00322957000000001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Zed_Camera_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Zed_Camera_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Zed_Camera_1"
+    type="fixed">
+    <origin
+      xyz="0 -0.8675 0.42825"
+      rpy="0 0.34907 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Zed_Camera_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Zed_Camera_2">
+    <inertial>
+      <origin
+        xyz="0.0250000000000004 2.69948711645273E-17 -2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.615000000000001" />
+      <inertia
+        ixx="0.00322956999999997"
+        ixy="1.01470455341151E-19"
+        ixz="-4.44522890719057E-18"
+        iyy="0.000256249999999968"
+        iyz="8.83798450979468E-20"
+        izz="0.00322957000000001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Zed_Camera_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/Zed_Camera_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Zed_Camera_2"
+    type="fixed">
+    <origin
+      xyz="0 0.4925 0.07"
+      rpy="0 0.17453 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Zed_Camera_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
