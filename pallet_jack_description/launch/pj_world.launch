@@ -1,0 +1,37 @@
+<launch>
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="world_name" default="$(find-pkg-share pallet_jack_description)/worlds/pj_world.world"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <arg name="robot_name" default="$(find-pkg-share pallet_jack_description)/urdf/pallet_jack.xacro"/>
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
+    <arg name="world_name" value="$(var world_name)"/>
+    <arg name="debug" value="$(var debug)" />
+    <arg name="gui" value="$(var gui)" />
+    <arg name="paused" value="$(var paused)"/>
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="headless" value="$(var headless)"/>
+  </include>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <!-- <param name="robot_description"
+    command="$(find-pkg-share xacro)/xacro -inorder '$(var robot_name)'" /> -->
+
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" args="$(var robot_name)"/>
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model pallet_jack -param robot_description"/> -->
+
+  <!-- ros_control rrbot launch file -->
+  <!--include file="$(find rrbot_control)/launch/rrbot_control.launch" /-->
+
+  <node pkg="gazebo_ros" exec="spawn_entity.py" name="spawn_urdf" args="-entity pallet_jack -topic /robot_description -x 0 -y -0.5 -z 1.0" respawn="false" output="screen" />
+</launch>
