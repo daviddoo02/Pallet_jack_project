@@ -2,7 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="pallet_jack">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="pallet_jack">
 
   <link name="base_link">
     <inertial>
@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/base_link.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 0.50196 1" />
@@ -22,7 +22,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/base_link.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -36,7 +36,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/steering_wheel_link.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/steering_wheel_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.79216 0.81961 0.93333 1" />
@@ -61,7 +61,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/drive_wheel_link.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/drive_wheel_link.STL" />
       </geometry>
       <material name="">
         <color rgba="0.50196 0.50196 0.50196 1" />
@@ -70,7 +70,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/drive_wheel_link.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/drive_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -92,7 +92,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/lidar.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/lidar.STL" />
       </geometry>
       <material name="">
         <color rgba="1 0.50196 0.50196 1" />
@@ -116,7 +116,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/zed_cam_1.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/zed_cam_1.STL" />
       </geometry>
       <material name="">
         <color rgba="1 0.50196 0.50196 1" />
@@ -140,7 +140,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/zed_cam_2.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/zed_cam_2.STL" />
       </geometry>
       <material name="">
         <color rgba="1 0.50196 0.50196 1" />
@@ -174,7 +174,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_1.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_1.STL" />
       </geometry>
       <material name="">
         <color rgba="0.50196 0.50196 0.50196 1" />
@@ -183,7 +183,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_1.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_1.STL" />
       </geometry>
     </collision>
   </link>
@@ -204,7 +204,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_2.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_2.STL" />
       </geometry>
       <material name="">
         <color rgba="0.50196 0.50196 0.50196 1" />
@@ -213,7 +213,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_2.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_2.STL" />
       </geometry>
     </collision>
   </link>
@@ -234,7 +234,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_3.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_3.STL" />
       </geometry>
       <material name="">
         <color rgba="0.50196 0.50196 0.50196 1" />
@@ -243,7 +243,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_3.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_3.STL" />
       </geometry>
     </collision>
   </link>
@@ -264,7 +264,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_4.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_4.STL" />
       </geometry>
       <material name="">
         <color rgba="0.50196 0.50196 0.50196 1" />
@@ -273,7 +273,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://pallet_jack_description/pallet_jack/meshes/caster_4.STL" />
+        <mesh filename="package://pallet_jack_description/meshes/caster_4.STL" />
       </geometry>
     </collision>
   </link>
@@ -499,10 +499,10 @@
   <!-- Zed cameras -->
 
   <!-- Lidar -->
-  <!-- <xacro:include filename="package://velodyne_simulator/veloyne_description/urdf/VLP-16.urdf.xacro"/>
+  <xacro:include filename="package://velodyne_description/urdf/VLP-16.urdf.xacro"/>
   <VLP-16 parent="lidar" name="velodyne" topic="/velodyne_points" hz="10" samples="440" gpu="false">
     <origin xyz="0 0 0" rpy="0 0 0" />
-  </VLP-16> -->
+  </VLP-16>
 
   <!-- Tricycle Drive -->
 

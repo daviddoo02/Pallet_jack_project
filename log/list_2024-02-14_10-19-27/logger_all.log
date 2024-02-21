@@ -1,0 +1,97 @@
+[3.876s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/homandat02/pallet_jack_project/pallet_jack_ws/src']
+[3.876s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/homandat02/pallet_jack_project/pallet_jack_ws/src'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f1ee99e2c40>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f1ee99e2c40>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1ee99e00d0>)
+[4.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.008s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/homandat02/pallet_jack_project/pallet_jack_ws/src'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'ignore'
+[4.008s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'ignore_ament_install'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['colcon_pkg']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'colcon_pkg'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['colcon_meta']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'colcon_meta'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['ros']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'ros'
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['cmake', 'python']
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'cmake'
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'python'
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extensions ['python_setup_py']
+[4.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src) by extension 'python_setup_py'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/log) by extension 'ignore'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/log) ignored
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extensions ['ignore', 'ignore_ament_install']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extension 'ignore'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extension 'ignore_ament_install'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extensions ['colcon_pkg']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extension 'colcon_pkg'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extensions ['colcon_meta']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extension 'colcon_meta'
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extensions ['ros']
+[4.020s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description) by extension 'ros'
+[4.023s] DEBUG:colcon.colcon_core.package_identification:Package '/home/homandat02/pallet_jack_project/pallet_jack_ws/src/pallet_jack_description' with type 'ros.ament_cmake' and name 'pallet_jack_description'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['ignore', 'ignore_ament_install']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'ignore'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'ignore_ament_install'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['colcon_pkg']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'colcon_pkg'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['colcon_meta']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'colcon_meta'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['ros']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'ros'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['cmake', 'python']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'cmake'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'python'
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extensions ['python_setup_py']
+[4.023s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator) by extension 'python_setup_py'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['ignore', 'ignore_ament_install']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'ignore'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'ignore_ament_install'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['colcon_pkg']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'colcon_pkg'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['colcon_meta']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'colcon_meta'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['ros']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'ros'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['cmake', 'python']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'cmake'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'python'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extensions ['python_setup_py']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/img) by extension 'python_setup_py'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/log) by extensions ['ignore', 'ignore_ament_install']
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/log) by extension 'ignore'
+[4.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/log) ignored
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extensions ['ignore', 'ignore_ament_install']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extension 'ignore'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extension 'ignore_ament_install'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extensions ['colcon_pkg']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extension 'colcon_pkg'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extensions ['colcon_meta']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extension 'colcon_meta'
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extensions ['ros']
+[4.025s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description) by extension 'ros'
+[4.026s] DEBUG:colcon.colcon_core.package_identification:Package '/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_description' with type 'ros.ament_cmake' and name 'velodyne_description'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extension 'ignore'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extension 'ignore_ament_install'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extensions ['colcon_pkg']
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extension 'colcon_pkg'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extensions ['colcon_meta']
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extension 'colcon_meta'
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extensions ['ros']
+[4.026s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins) by extension 'ros'
+[4.027s] DEBUG:colcon.colcon_core.package_identification:Package '/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_gazebo_plugins' with type 'ros.ament_cmake' and name 'velodyne_gazebo_plugins'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extensions ['ignore', 'ignore_ament_install']
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extension 'ignore'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extension 'ignore_ament_install'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extensions ['colcon_pkg']
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extension 'colcon_pkg'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extensions ['colcon_meta']
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extension 'colcon_meta'
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extensions ['ros']
+[4.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator) by extension 'ros'
+[4.028s] DEBUG:colcon.colcon_core.package_identification:Package '/home/homandat02/pallet_jack_project/pallet_jack_ws/src/velodyne_simulator/velodyne_simulator' with type 'ros.ament_cmake' and name 'velodyne_simulator'
+[4.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

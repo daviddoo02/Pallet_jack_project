@@ -21,9 +21,24 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-install(
-  DIRECTORY meshes worlds urdf launch rviz
-  DESTINATION share/${PROJECT_NAME}
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+)
+
+install(DIRECTORY meshes/
+  DESTINATION share/${PROJECT_NAME}/meshes
+)
+
+install(DIRECTORY rviz/
+  DESTINATION share/${PROJECT_NAME}/rviz
+)
+
+install(DIRECTORY urdf/
+  DESTINATION share/${PROJECT_NAME}/urdf
+)
+
+install(DIRECTORY world/
+  DESTINATION share/${PROJECT_NAME}/world
 )
 
 if(BUILD_TESTING)
